@@ -5,9 +5,9 @@ const plugins = require('./config/plugins/')
 
 module.exports = {
     // dest: 'gb-pages',//打包目录
-    base: '/Aana blog/',
-    title: "aana's blogs",
-    description: '荷尽已无擎雨盖，菊残犹有傲霜枝。',
+    base: '/Aanablog/',
+    title: "aana'sblogs",
+    description: ' to feed my enthusiasm for writing ',
     head: [
         ['link', {
             rel: 'icon',
@@ -52,9 +52,9 @@ module.exports = {
         },
         // Last update time
         lastUpdated: true,
-        lastUpdated: '上次更新', // string | boolean
+        lastUpdated: 'last updated', // string | boolean
         // Author
-        author: 'zhāngpéngjūn',
+        author: 'Anandita Vishnoi',
         // record number
         record: '京ICP备17067634号-1',
         // project start time

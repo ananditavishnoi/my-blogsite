@@ -14,7 +14,7 @@ heroImageStyle: {
   background: 'rgba(0, 0, 0, 0.8) none repeat scroll !important',
 }
 isShowTitleInHome: true
-actionText: '开启进阶之路'
+actionText: 'click me'
 actionLink: /views/
 features:
 - title: 
@@ -28,7 +28,7 @@ footer: MIT Licensed | Copyright © 2018-present Evan You
 
 <Clock/>
 
-::: tip 昨天 今天 明天
+::: tip About me
 
 问一问，人的一生能有几天 <br/>
 算一算，人的一生不过三天 <br/>
