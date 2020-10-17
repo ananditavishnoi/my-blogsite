@@ -25,7 +25,7 @@ module.exports = {
         ["script", {
             "language": "javascript",
             "type": "text/javascript",
-            "src": "/js/MouseClickEffect.js"
+            // "src": "/js/MouseClickEffect.js"
         }]
     ],
 
