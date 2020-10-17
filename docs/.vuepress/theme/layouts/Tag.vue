@@ -49,7 +49,7 @@ export default {
   data () {
     return {
       currentPage: 1,
-      currentTag: '全部'
+      currentTag: 'All'
     }
   },
 

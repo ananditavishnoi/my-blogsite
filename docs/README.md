@@ -14,7 +14,7 @@ heroImageStyle: {
   background: 'rgba(0, 0, 0, 0.8) none repeat scroll !important',
 }
 isShowTitleInHome: true
-actionText: 'get to know me ->'
+actionText: 'About Me'
 actionLink: /about/
 # features:
 # - title: 

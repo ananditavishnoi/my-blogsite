@@ -1,89 +1,21 @@
 ---
-title: Blogs
+title: Categories and Tags
 sidebar: true
-date: 2019-08-21
 sidebarDepth: 0
 isShowComments: true
 ---
-<!-- 
-<div style="height: 120px">
-	<Boxx :changeTime='changeTime' />
-</div> -->
-
-<!-- <p style='display: block;margin-block-start: 1em;margin-block-end: 1em;margin-inline-start: 0px;margin-inline-end: 0px;'>
-	<img id='imgShow' :class='active' :src='imgSrc'/>
-</p> -->
 
 <div id='category'>
 
-[【分类】](/categories/后端/)
+[Category](/categories/)
 
 </div>
 
 <div id='tag'>
 
-[【标签】](/tag/)
+[Tag](/tag/)
 
 </div>
-
-<div id='fj'>
-
-[【前端】](/views/front-end/js-json.html) | [【后端】](/views/java/ArrayList.html)
-
-</div>
-
-<div id='se'>
-
- [【规范】](/views/specification/ali.html) | [【随笔】](/views/essay/20191109.html)
-
-</div>
-
-<script>
-	export default {
-		data() {
-			return {
-                changeTime: '2000',
-				index: 2,
-				imgSrc: '/znote/view/比心1.png',
-				active: 'active'
-			}
-		},
-		mounted() {
-			this.updateTime(this.changeTime)
-			this.randomPic()
-		},
-		updated() {
-		},
-		methods: {
-    		randomPic() {
-				let picList = ['kQWXr.gif','rddek.gif']
-				let imgShow = document.getElementById("imgShow")
-				setInterval(() => {
-					if(this.active == 'active'){
-						this.active="noActive"
-					}else {
-						this.active="active";
-					}
-					this.imgSrc = '/znote/view/' + picList[Math.floor(Math.random() * picList.length)]
-					
-				}, 5000)
-			},
-
-			updateTime(time) {
-				setInterval(() => {
-			      if (this.index%2 == 0) {
-			      	this.changeTime = '300'
-			      }
-			      if (this.index%2 != 0) {
-			      	this.changeTime = time
-			      }
-			      this.index++;
-			    }, 6000)
-			}
-		}
-
-	}
-</script>
 
 <style lang='stylus' scoped> 
 	img.noActive{
@@ -102,11 +34,11 @@ isShowComments: true
 	    //padding-left: 26%;
 	}
 
-	/* #category {
+	#category {
 		width:100px;
-		height:100px;
-		float: right;
-		border-radius: 25%;
+		height:10px;
+		float: center;
+		border-radius: 15%;
 		background:#ffff0059;
 		transition:width 2s;
 		-moz-transition:width 2s;
@@ -116,13 +48,13 @@ isShowComments: true
 
 	#category:hover {
 		width:300px;
-	} */
+	}
 
 	#category {
 		width:100px;
-		height:100px;
-		float: right;
-		border-radius: 25%;
+		height:1099px;
+		float: center;
+		border-radius: 15%;
 		background:#ffff0059;
 		transition:width 2s, height 2s;
 		-moz-transition:width 2s, height 2s, -moz-transform 2s; /* Firefox 4 */
@@ -142,7 +74,7 @@ isShowComments: true
 		width:100px;
 		height:100px;
 		float: right;
-		border-radius: 25%;
+		border-radius: 15%;
 		background:#ffff0059;
 		transition:width 2s, height 2s;
 		-moz-transition:width 2s, height 2s, -moz-transform 2s; /* Firefox 4 */
@@ -161,14 +93,10 @@ isShowComments: true
 	
 	#category p,#tag p {
 		    margin: 0;
-		    padding-top: 35px;
-		    padding-left: 15px;
-		    /*padding-right: 15px;*/
-		    font-size: 15px;
-	}
-	
-	#fj,#se {
-		margin-top: 27px;
+		    padding-top: 30px;
+		    padding-left: 23 px;
+		    padding-right: 15px;
+		    font-size: 13px;
 	}
 	
 	@media screen and (max-width: 960px){

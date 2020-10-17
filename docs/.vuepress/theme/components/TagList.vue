@@ -21,7 +21,7 @@ export default {
   },
   computed: {
     tags () {
-      return [{ name: '全部', path: '/tag/' }, ...this.$tags.list]
+      return [{ name: 'All', path: '/tag/' }, ...this.$tags.list]
     }
   },
   methods: {

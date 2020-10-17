@@ -73,22 +73,22 @@ module.exports = [
     [require('../../plugins/enhanced-search'), { // 可以添加第三方搜索链接的搜索框（原官方搜索框的参数仍可用）
         thirdparty: [ // 可选，默认 []
             {
-                title: '在 <span style="color: blue; ">Baidu</span> &nbsp;&nbsp;中搜索 ',
+                title: ' <span style="color: blue; ">Baidu</span> &nbsp;&nbsp; ',
                 frontUrl: 'https://www.baidu.com/s?wd=',
             },
             {
-                title: '在 <span style="color: red; ">Google</span> 中搜索 ',
+                title: ' <span style="color: red; ">Google</span>  ',
                 frontUrl: 'https://www.google.com/search?q=',
             }
         ]
     }],
 
-    ["vuepress-plugin-nuggets-style-copy", {
-        copyText: "复制代码",
-        tip: {
-            content: "复制成功!"
-        }
-    }],
+    // ["vuepress-plugin-nuggets-style-copy", {
+    //     copyText: "复制代码",
+    //     tip: {
+    //         content: "复制成功!"
+    //     }
+    // }],
 
     ['copyright', {
         minLength: 10,

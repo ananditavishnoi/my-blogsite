@@ -46,9 +46,9 @@ export default {
   data () {
     return {
       tags: [],
-      currentTag: '全部',
+      currentTag: 'All',
       currentPage: 1,
-      allTagName: '全部'
+      allTagName: 'All'
     }
   },
 
