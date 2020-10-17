@@ -1,5 +1,5 @@
 ---
-title: About me
+title: About Me
 isTimeLine: false
 sidebar: false
 isShowComments: true
@@ -12,9 +12,9 @@ isShowComments: true
   <a href="https://www.instagram.com/ananditavishnoi/" class="zi zi_tmInstagram"></a>
 </p>
 
-::: theorem 
-Hello world! I am **Anandita Vishnoi**, a high school student studying in India. I have a keen interest in Music, Writing, and all things Web!
-I strongly believe that sharing knowledge is one of the most generous acts one can perform. Adhereing to this belief,I decided to write blogs. Hopefully they inspire you in some way or the other!
+::: theorem Hello World!
+ I am **Anandita Vishnoi**, a high school student studying in India. I have a keen interest in Music, Writing, and all things Web!
+I strongly believe that sharing knowledge is one of the most generous acts one can perform. Adhering to this belief,I decided to write blogs. Hopefully they inspire you in some way or the other!
 
 ::: right
 Happy reading! :)
