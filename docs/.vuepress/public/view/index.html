@@ -3,9 +3,8 @@
 
 <head>
     <meta charset="GBK">
-    <link rel="icon"
-        href="https://infinitypro-img.infinitynewtab.com/custom-icon/8001de1jd3n68lbfnxxt564xvb0vl5.png?imageMogr2/thumbnail/240x/format/webp/blur/1x0/quality/100|imageslim">
-    <title>znote</title>
+    <link rel="icon" href="https://infinitypro-img.infinitynewtab.com/custom-icon/8001de1jd3n68lbfnxxt564xvb0vl5.png?imageMogr2/thumbnail/240x/format/webp/blur/1x0/quality/100|imageslim">
+    <title>vnote</title>
     <style>
         /* @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"); */
         /* * {
@@ -15,11 +14,11 @@
         -moz-box-sizing: border-box;
         box-sizing: border-box;
         } */
-
+        
         body {
             text-align: center;
         }
-
+        
         .BoardName {
             color: white;
             text-shadow: 1px 2px 3px black;
@@ -27,7 +26,7 @@
             transform-style: preserve-3d;
             transform: translateZ(80px);
         }
-
+        
         .main {
             height: 100%;
             width: 100%;
@@ -37,7 +36,7 @@
             z-index: 2;
             opacity: 1;
         }
-
+        
         .main-header {
             position: fixed;
             top: 0;
@@ -48,7 +47,7 @@
             background: #292929;
             -webkit-transform: translate3d(0, 0, 0);
         }
-
+        
         .folio-btn {
             position: absolute;
             right: 0;
@@ -58,7 +57,7 @@
             background: #343434;
             border-top: 1px solid rgba(255, 255, 255, 0.1);
         }
-
+        
         .folio-btn-item {
             position: absolute;
             left: 20px;
@@ -66,14 +65,14 @@
             height: 40px;
             top: 20px;
         }
-
+        
         .folio-btn-dot {
             float: left;
             width: 33.3%;
             height: 33.3%;
             position: relative;
         }
-
+        
         .folio-btn-dot:before {
             content: '';
             position: absolute;
@@ -86,11 +85,11 @@
             transition: all 300ms linear;
             transform: scale(1.0);
         }
-
+        
         .folio-btn-dot:before {
             background: #F68338;
         }
-
+        
         .folio-btn:hover .folio-btn-dot:first-child:before,
         .folio-btn:hover .folio-btn-dot:nth-child(3):before,
         .folio-btn:hover .folio-btn-dot:nth-child(4):before,
@@ -98,9 +97,8 @@
             transform: scale(1.8);
             opacity: 0.5;
         }
-
-
         /***social***/
+        
         .header-social {
             position: absolute;
             bottom: 80px;
@@ -110,11 +108,11 @@
             padding: 20px 0;
             background: #383838;
         }
-
+        
         .header-social:before {
             background: #F68338;
         }
-
+        
         .header-social:before {
             content: '';
             position: absolute;
@@ -124,12 +122,12 @@
             margin-left: -18px;
             height: 6px;
         }
-
+        
         .header-social li {
             display: block;
             margin-top: 6px;
         }
-
+        
         .header-social li a {
             width: 36px;
             height: 36px;
@@ -140,11 +138,11 @@
             border: 1px solid rgba(255, 255, 255, 0.08);
             transition: all 300ms linear;
         }
-
+        
         .header-social li a:hover {
             color: #F68338;
         }
-
+        
         ul,
         li {
             border: none;
@@ -158,12 +156,12 @@
             margin: 0;
             padding: 0;
         }
-
+        
         ol,
         ul {
             list-style: none;
         }
-
+        
         .main-header:before {
             content: '';
             position: absolute;
@@ -173,7 +171,7 @@
             bottom: 120px;
             background: rgba(255, 255, 255, 0.1);
         }
-
+        
         .nav-button {
             width: 28px;
             height: 50px;
@@ -182,7 +180,7 @@
             position: relative;
             top: 120px;
         }
-
+        
         .nav-button span {
             width: 100%;
             float: left;
@@ -193,16 +191,16 @@
             overflow: hidden;
             transition: all 0.2s ease-in-out;
         }
-
+        
         .nav-button .ncs {
             width: 70%;
         }
-
+        
         .nav-button .nbs,
         .nav-button.cmenu:hover .nbs {
             width: 100%;
         }
-
+        
         .menu-button-text {
             position: absolute;
             left: 0;
@@ -214,20 +212,20 @@
             text-transform: uppercase;
             letter-spacing: 2px;
         }
-
+        
         .nav-button span {
             background: #F68338;
         }
-
+        
         .nav-button:hover span:before {
             width: 100%;
         }
-
+        
         .nav-button:hover .ncs,
         .nav-button:hover .nbs {
             width: 100%;
         }
-
+        
         .nav-button span:before {
             content: '';
             position: absolute;
@@ -238,14 +236,8 @@
             background: #fff;
             transition: all 0.2s ease-in-out;
         }
-
-
-
-
         /*****end****/
-
-
-
+        
         #wrapper {
             /* position: absolute; */
             top: 0;
@@ -254,7 +246,7 @@
             bottom: 0;
             z-index: 3;
         }
-
+        
         .content-holder {
             position: absolute;
             top: 0;
@@ -262,24 +254,23 @@
             width: 100%;
             height: 100%;
         }
-
+        
         .hero-wrap,
         .fs-slider-wrap {
             background: #292929;
             z-index: 25;
         }
-
+        
         .full-height {
             height: 100%;
         }
-
+        
         .fl-wrap {
             float: left;
             width: 100%;
             position: relative;
         }
-
-
+        
         .impulse-wrap {
             background: #232323;
             position: absolute;
@@ -290,7 +281,7 @@
             z-index: 1;
             -webkit-perspective: 1000;
         }
-
+        
         .impulse-wrap:before {
             content: '';
             position: absolute;
@@ -299,8 +290,7 @@
             width: 100%;
             height: 100%;
         }
-
-
+        
         .mm-parallax {
             position: absolute;
             top: 100px;
@@ -310,13 +300,12 @@
             z-index: 20;
             transform-style: preserve-3d;
         }
-
-
+        
         .impulse-wrap .bg,
         .impulse-wrap .overlay {
             box-shadow: 0 20px 25px 0 rgba(18, 17, 30, .35);
         }
-
+        
         .overlay {
             position: absolute;
             top: 0;
@@ -327,7 +316,7 @@
             opacity: 0.4;
             z-index: 3;
         }
-
+        
         .bg {
             position: absolute;
             top: 0;
@@ -341,10 +330,7 @@
             background-repeat: repeat;
             background-origin: content-box;
         }
-
-
-
-
+        
         .hero-corner {
             top: 50px;
             right: 50px;
@@ -352,21 +338,21 @@
             border-top: 1px solid;
             border-right: 1px solid;
         }
-
+        
         .hero-corner2 {
             top: 50px;
             left: 50px;
             border-top: 1px solid;
             border-left: 1px solid;
         }
-
+        
         .hero-corner3 {
             bottom: 50px;
             right: 50px;
             border-bottom: 1px solid;
             border-right: 1px solid;
         }
-
+        
         .hero-corner4 {
             bottom: 50px;
             left: 50px;
@@ -374,9 +360,7 @@
             border-left: 1px solid;
             border-bottom: 1px solid;
         }
-
-
-
+        
         .hero-corner,
         .hero-corner2,
         .hero-corner3,
@@ -387,15 +371,14 @@
             z-index: 21;
             border-color: rgba(255, 255, 255, 0.3);
         }
-
-
+        
         .fl-wrap {
             float: left;
             width: 100%;
             position: relative;
             transform: translateZ(80px)
         }
-
+        
         .hero-wrap-item {
             top: 45%;
         }
@@ -440,9 +423,7 @@
                         <div class="mm-par-wrap">
                             <div class="mm-parallax" data-tilt data-tilt-max="4">
                                 <div class="overlay"></div>
-                                <div class="bg"
-                                    data-bg="https://images.unsplash.com/photo-1499018658500-b21c72d7172b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80"
-                                    style="background-image: url(https://images.unsplash.com/photo-1499018658500-b21c72d7172b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80);">
+                                <div class="bg" data-bg="https://images.unsplash.com/photo-1499018658500-b21c72d7172b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80" style="background-image: url(https://images.unsplash.com/photo-1499018658500-b21c72d7172b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80);">
 
                                 </div>
 
@@ -486,21 +467,21 @@
 <script>
     'use strict';
 
-    var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) {
+    var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function(obj) {
         return typeof
         obj;
-    } : function (obj) {
+    } : function(obj) {
         return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !==
             Symbol.prototype ? "symbol" : typeof obj;
     };
 
-    (function (factory) {
+    (function(factory) {
         if (typeof define === 'function' && define.amd) {
             // AMD. Register as an anonymous module.
             define(['jquery'], factory);
         } else if ((typeof module === 'undefined' ? 'undefined' : _typeof(module)) === 'object' && module.exports) {
             // Node/CommonJS
-            module.exports = function (root, jQuery) {
+            module.exports = function(root, jQuery) {
                 if (jQuery === undefined) {
                     // require('jQuery') returns a factory that requires window to
                     // build a jQuery instance, we normalize how we use modules
@@ -519,8 +500,8 @@
             // Browser globals
             factory(jQuery);
         }
-    })(function ($) {
-        $.fn.tilt = function (options) {
+    })(function($) {
+        $.fn.tilt = function(options) {
 
             /**
              * RequestAnimationFrame
@@ -556,7 +537,7 @@
                     'transition': 'opacity ' + this.settings.speed + 'ms ' +
                         this.settings.easing
                 });
-                this.timeout = setTimeout(function () {
+                this.timeout = setTimeout(function() {
                     $(_this2).css({
                         'transition': ''
                     });
@@ -696,9 +677,9 @@
 
                 // If option pre-render is enabled we assume all html/css is present for an optimal glare effect.
                 if (!glarePrerender)
-                    // Create glare element
+                // Create glare element
                     $(this).append(
-                        '<div class="js-tilt-glare"><div class="js-tilt-glare-inner"></div></div>');
+                    '<div class="js-tilt-glare"><div class="js-tilt-glare-inner"></div></div>');
 
                 // Store glare selector if glare is enabled
                 this.glareElementWrapper = $(this).find(".js-tilt-glare");
@@ -749,8 +730,8 @@
             /**
              * Public methods
              */
-            $.fn.tilt.destroy = function () {
-                $(this).each(function () {
+            $.fn.tilt.destroy = function() {
+                $(this).each(function() {
                     $(this).find('.js-tilt-glare').remove();
                     $(this).css({
                         'will-change': '',
@@ -760,23 +741,23 @@
                 });
             };
 
-            $.fn.tilt.getValues = function () {
+            $.fn.tilt.getValues = function() {
                 var results = [];
-                $(this).each(function () {
+                $(this).each(function() {
                     this.mousePositions = getMousePositions.call(this);
                     results.push(getValues.call(this));
                 });
                 return results;
             };
 
-            $.fn.tilt.reset = function () {
-                $(this).each(function () {
+            $.fn.tilt.reset = function() {
+                $(this).each(function() {
                     var _this3 = this;
 
                     this.mousePositions = getMousePositions.call(this);
                     this.settings = $(this).data('settings');
                     mouseLeave.call(this);
-                    setTimeout(function () {
+                    setTimeout(function() {
                         _this3.reset = false;
                     }, this.settings.transition);
                 });
@@ -785,7 +766,7 @@
             /**
              * Loop every instance
              */
-            return this.each(function () {
+            return this.each(function() {
                 var _this4 = this;
 
                 /**
@@ -797,8 +778,7 @@
                     maxTilt: $(this).is('[data-tilt-max]') ? $(this).data('tilt-max') : 20,
                     perspective: $(this).is('[data-tilt-perspective]') ? $(this).data(
                         'tilt-perspective') : 300,
-                    easing: $(this).is('[data-tilt-easing]') ? $(this).data('tilt-easing') :
-                        'cubic-bezier(.03,.98,.52,.99)',
+                    easing: $(this).is('[data-tilt-easing]') ? $(this).data('tilt-easing') : 'cubic-bezier(.03,.98,.52,.99)',
                     scale: $(this).is('[data-tilt-scale]') ? $(this).data('tilt-scale') : '1',
                     speed: $(this).is('[data-tilt-speed]') ? $(this).data('tilt-speed') : '400',
                     transition: $(this).is('[data-tilt-transition]') ? $(this).data(
@@ -816,11 +796,11 @@
                 if (this.settings.axis !== null) {
                     console.warn(
                         'Tilt.js: the axis setting has been renamed to disableAxis. Seehttps://github.com/gijsroge/tilt.js/pull/26 for more information'
-                        );
+                    );
                     this.settings.disableAxis = this.settings.axis;
                 }
 
-                this.init = function () {
+                this.init = function() {
                     // Store settings
                     $(_this4).data('settings', _this4.settings);
 

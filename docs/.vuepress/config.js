@@ -4,7 +4,7 @@ const sidebar = require('./config/sidebar/')
 const plugins = require('./config/plugins/')
 
 module.exports = {
-    // dest: 'gb-pages',//打包目录
+
     base: '/vnote/',
     title: "vnote",
     description: ' to feed my enthusiasm for writing ',
@@ -34,8 +34,8 @@ module.exports = {
         nav,
         // sidebar: 'auto',
         sidebar,
-        // logo: '/vuepress/head-fish.jpg', 
-        authorAvatar: '/vuepress/fish.jpg',
+        logo: '/vuepress/koala.svg',
+        authorAvatar: '/vuepress/koala.svg',
         search: true,
         searchMaxSuggestions: 10,
         sidebarDepth: 2,

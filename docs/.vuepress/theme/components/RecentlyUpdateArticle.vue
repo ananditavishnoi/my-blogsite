@@ -1,7 +1,7 @@
 <template>
   <div :class="['article-list',{'no-article-list': isShowArticle}]">
     <div class="article-title">
-      <router-link :to="moreArticle || '/timeline/'" class="iconfont icon-shizhong">最近更新</router-link>
+      <router-link :to="moreArticle || '/timeline/'" class="iconfont icon-shizhong">Blog History</router-link>
     </div>
     <div class="article-wrapper">
       <dl v-for="(item, index) in topPublishPosts" :key="index">
@@ -12,9 +12,9 @@
         </dt>
       </dl>
     </div>
-    <div>
-      <router-link :to="moreArticle || '/timeline/'" class="article-more">更多文章 ></router-link>
-    </div>
+    <!-- <div>
+      <router-link :to="moreArticle || '/blogs/'" class="article-more">Check it out -></router-link>
+    </div> -->
 
   </div>
 </template>
