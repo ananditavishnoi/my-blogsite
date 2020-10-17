@@ -8,18 +8,18 @@ module.exports = [
         type: 'details',
         before: info => `<details class="custom-block details"><summary>${info}</summary>`,
         after: '</details>',
-        defaultTitle: '详细信息'
+        defaultTitle: ''
     }],
     ['container', {
         type: 'right',
         defaultTitle: '',
-    },],
+    }, ],
     ['container', {
         type: 'theorem',
         before: info => `<div class="theorem"><p class="title">${info}</p>`,
         after: '</div>',
-    },],
-    ['container', {// 卡片列表
+    }, ],
+    ['container', { // 卡片列表
         type: CARD_LIST,
         render: (tokens, idx) => {
             // tokens 是整个md文件的虚拟dom结构数组
@@ -30,19 +30,19 @@ module.exports = [
             // 注意：修改这里面的代码后需要在md文件保存一下才会重新执行渲染
             return renderCardList(tokens, idx, CARD_LIST)
         }
-    },],
-    ['container', {// 图文卡片列表
-            type: CARD_IMG_LIST,
-            render: (tokens, idx) => {
-                return renderCardList(tokens, idx, CARD_IMG_LIST)
-            }
-    },],
+    }, ],
+    ['container', { // 图文卡片列表
+        type: CARD_IMG_LIST,
+        render: (tokens, idx) => {
+            return renderCardList(tokens, idx, CARD_IMG_LIST)
+        }
+    }, ],
 
     ['@vuepress/pwa', {
         serviceWorker: true,
         updatePopup: {
-            message: "发现新内容可用",
-            buttonText: "刷新"
+            message: "msg",
+            buttonText: "txt"
         }
     }],
 
@@ -66,8 +66,7 @@ module.exports = [
     // ],
 
     'flowchart',
-    "vuepress-plugin-boxx",
-    ['vuepress-plugin-smooth-scroll'],
+    "vuepress-plugin-boxx", ['vuepress-plugin-smooth-scroll'],
     require('../../plugins/detailsOpenFlag/index'),
     require('../../plugins/musicPlayer/index'),
 
@@ -91,10 +90,10 @@ module.exports = [
         }
     }],
 
-    ['copyright',{
+    ['copyright', {
         minLength: 10,
         clipboardComponent: path.resolve(__dirname, '../../components/Copyright.vue')
-    },],
+    }, ],
 
     ['@vuepress/last-updated', { // "上次更新"时间格式
         transformer: (timestamp, lang) => {
@@ -135,7 +134,7 @@ function renderCardList(tokens, idx, type) {
                 dataList = Array.isArray(dataObj) ? dataObj : dataObj.list
             }
 
-            if (dataList  && dataList.length) { // 有列表数据
+            if (dataList && dataList.length) { // 有列表数据
 
                 // 每行显示几个
                 let row = Number(info.split(' ').pop())
@@ -183,7 +182,7 @@ function getCardListDOM(dataList, row) {
 function getCardImgListDOM(dataList, row) {
     let listDOM = ''
     dataList.forEach(item => {
-        listDOM += `
+                listDOM += `
       <div class="card-item ${ row ? 'row-' + row : '' }" >
         <div class="box-img">
           <a href="${item.link}" target="_blank">

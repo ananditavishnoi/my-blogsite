@@ -1,18 +1,18 @@
 ---
-title: 概览
+title: Blogs
 sidebar: true
 date: 2019-08-21
 sidebarDepth: 0
 isShowComments: true
 ---
-
+<!-- 
 <div style="height: 120px">
 	<Boxx :changeTime='changeTime' />
-</div>
+</div> -->
 
-<p style='display: block;margin-block-start: 1em;margin-block-end: 1em;margin-inline-start: 0px;margin-inline-end: 0px;'>
+<!-- <p style='display: block;margin-block-start: 1em;margin-block-end: 1em;margin-inline-start: 0px;margin-inline-end: 0px;'>
 	<img id='imgShow' :class='active' :src='imgSrc'/>
-</p>
+</p> -->
 
 <div id='category'>
 

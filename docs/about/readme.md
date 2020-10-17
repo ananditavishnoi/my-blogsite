@@ -1,5 +1,5 @@
 ---
-title: ABOUT ME
+title: About me
 isTimeLine: false
 sidebar: false
 isShowComments: true
@@ -25,7 +25,7 @@ Happy reading! :)
 
 - This warehouse code uses the [MIT](https://github.com/SigureMo/notev/blob/master/LICENSE) protocol to open source, but all the document content uses [CC 4.0 BY-SA](https://creativecommons.org/licenses/by-sa/4.0/) agreement to release
 
-<link rel="stylesheet" href="https://ico.z01.com/zico.min.css"> -->
+<link rel="stylesheet" href="https://ico.z01.com/zico.min.css"> 
 
 <style lang="stylus" scoped> 
 

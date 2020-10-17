@@ -77,12 +77,6 @@
       <slot v-show="recoShowModule" name="bottom"/>
     </ModuleTransition>
 
-    <RecentlyUpdateArticle
-      :length="3"
-      :moreArticle="updateBarConfig && updateBarConfig.moreArticle"
-      v-if="isShowUpdateBar"
-    />
-
   </main>
 </template>
 

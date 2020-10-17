@@ -58,7 +58,6 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      /*缩小一倍*/
       transform: scale(0.5,0.5);
     }
     .clock::before {
