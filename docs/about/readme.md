@@ -13,7 +13,7 @@ isShowComments: true
 </p>
 
 ::: theorem Hello World!
- I am **Anandita Vishnoi**, a high school student studying in India. I have a keen interest in Music, Writing, and all things Web!
+ I am Anandita Vishnoi, a high school student studying in India. I have a keen interest in Music, Writing, and all things Web!
 I strongly believe that sharing knowledge is one of the most generous acts one can perform. Adhering to this belief,I decided to write blogs. Hopefully they inspire you in some way or the other!
 
 ::: right
@@ -23,7 +23,7 @@ Happy reading! :)
 <CanvasNest color="255,0,0" opacity='1'></CanvasNest>
 
 
-- This warehouse code uses the [MIT](https://github.com/SigureMo/notev/blob/master/LICENSE) protocol to open source, but all the document content uses [CC 4.0 BY-SA](https://creativecommons.org/licenses/by-sa/4.0/) agreement to release
+<!-- - This warehouse code uses the [MIT](https://github.com/SigureMo/notev/blob/master/LICENSE) protocol to open source, but all the document content uses [CC 4.0 BY-SA](https://creativecommons.org/licenses/by-sa/4.0/) agreement to release -->
 
 <link rel="stylesheet" href="https://ico.z01.com/zico.min.css"> 
 
