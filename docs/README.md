@@ -21,8 +21,34 @@ footer: MIT Licensed | Copyright © 2018-present Evan You
 ---
 
 <Clock/>
+::: tip
+ <br/>
+<br/>
+<br/>
+ <br/>
+ <br/>
+<br/>
+<br/>
+ <br/>
+ <br/>
+<br/>
+<br/>
 
+<br/>
 
+ <br/><br/>
+<br/>
+
+ <br/>
+ <br/>
+ <br/>
+<br/>
+
+ <br/>
+ <br/>
+<br/>
+
+:::
 <CanvasNest color='0,23,255' zIndex='-2'></CanvasNest>
 
 <script>
