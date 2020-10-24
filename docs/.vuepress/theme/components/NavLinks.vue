@@ -74,13 +74,13 @@ export default {
 
       // blogConfig 的处理，根绝配置自动添加分类和标签
       const blogConfig = this.$themeConfig.blogConfig || {}
-      const isHasCategory = userNav.some(item => {
-        if (blogConfig.category) {
-          return item.text === (blogConfig.category.text || '分类')
-        } else {
-          return true
-        }
-      })
+      // const isHasCategory = userNav.some(item => {
+      //   if (blogConfig.category) {
+      //     return item.text === (blogConfig.category.text || '分类')
+      //   } else {
+      //     return true
+      //   }
+      // })
       const isHasTag = userNav.some(item => {
         if (blogConfig.tag) {
           return item.text === (blogConfig.tag.text || '标签')
@@ -89,20 +89,20 @@ export default {
         }
       })
 
-      if (!isHasCategory && Object.hasOwnProperty.call(blogConfig, 'category')) {
-        const category = blogConfig.category
-        const $categories = this.$categories
-        userNav.splice(parseInt(category.location || 2) - 1, 0, {
-          items: $categories.list.map(item => {
-            item.link = item.path
-            item.text = item.name
-            return item
-          }),
-          text: category.text || '分类',
-          type: 'links',
-          icon: 'reco-category'
-        })
-      }
+      // if (!isHasCategory && Object.hasOwnProperty.call(blogConfig, 'category')) {
+      //   const category = blogConfig.category
+      //   const $categories = this.$categories
+      //   userNav.splice(parseInt(category.location || 2) - 1, 0, {
+      //     items: $categories.list.map(item => {
+      //       item.link = item.path
+      //       item.text = item.name
+      //       return item
+      //     }),
+      //     text: category.text || '分类',
+      //     type: 'links',
+      //     icon: 'reco-category'
+      //   })
+      // }
       if (!isHasTag && Object.hasOwnProperty.call(blogConfig, 'tag')) {
         const tag = blogConfig.tag
         userNav.splice(parseInt(tag.location || 3) - 1, 0, {

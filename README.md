@@ -5,13 +5,13 @@ sidebarDepth: 0
 isShowComments: true
 ---
 
-<div id='category'>
+<!-- <div id='category'>
 
 [Category](/categories/)
 
-</div>
+</div> -->
 
-<div id='tag'>
+ <div id='tag'> 
 
 [Tag](/tag/)
 

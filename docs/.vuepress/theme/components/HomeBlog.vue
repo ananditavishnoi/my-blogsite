@@ -45,7 +45,7 @@
             :currentPage="currentPage"
             @getCurrentPage="getCurrentPage" />
         </div>
-        <div class="info-wrapper">
+        <!-- <div class="info-wrapper">
           <PersonalInfo/>
           <h4><i class="iconfont reco-category"></i> 分类</h4>
           <ul class="category-wrapper">
@@ -55,7 +55,7 @@
                 <span class="post-num" :style="{ 'backgroundColor': getOneColor() }">{{ item.pages.length }}</span>
               </router-link>
             </li>
-          </ul>
+          </ul> -->
           <hr>
           <h4 v-if="$tags.list.length !== 0"><i class="iconfont reco-tag"></i> 标签</h4>
           <TagList @getCurrentTag="getPagesByTags" />
